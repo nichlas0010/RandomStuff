@@ -101,6 +101,12 @@ def test_q2():
     if missing_number_paired([1, 1, 3, 240, 240, 240, 240]) != 3:
         return False
     
+    if missing_number_paired([1, 1, 3, 3, 3, 3, 3, 2, 2]) != 3:
+        return False
+    
+    if missing_number_paired([1, 1, 1, 1, 1, 1, 1, 5, 5]) != 1:
+        return False
+    
     return True
 
 print(test_q2())
