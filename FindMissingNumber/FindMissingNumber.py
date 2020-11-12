@@ -67,7 +67,7 @@ def missing_number_paired(arr):
     
     # Originally this line used arr.index, but I figure that function might be O(n) and that's too high for me
     # So I replaced it with manually checking if this index or the element below it is the first occurence
-    # Since this is single-paired we know there's max 2 elements of the same number
+    # Since this isn't single paired we have to loop through every number before the middle to find the first occurence of the middle number
     index = middle
     while index > 0 and arr[index] == arr[index-1]:
         index = index - 1
